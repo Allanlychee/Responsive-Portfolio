@@ -7,7 +7,9 @@
         font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
         text-decoration:none;
     }
+
     #topnav {
+    position: static;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align:center;
     background-color:#ffffff; 
@@ -40,16 +42,19 @@
     font-weight:bold;
     }
     #Navlinks{
+    position:relative;
+    float:left;
     width:270px;
-    margin-left:58%;
+    left:50%;
+    margin-right:;
     padding:40px;
     font-size:15pt;
     }
     
     .About{
-        margin-top:30px;
+        margin-top:25px;
         width:650px;
-        height:560px;
+        height:500px;
         background-color:white;
         float:left;
         margin-left:23%;
@@ -60,9 +65,9 @@
     }
 
     .Port{
-        margin-top:30px;
+        margin-top:25px;
         width:650px;
-        height:600px;
+        height:500px;
         background-color:white;
         float:left;
         margin-left:23%;
@@ -105,8 +110,8 @@
         overflow:auto;
     }
     
-    #Connect{
-        margin-top:30px;
+    .Connect{
+        margin-top:25px;
         width:270px;
         height:200px;
         background-color:white;
@@ -114,6 +119,7 @@
         border-style:solid;
         border-width:thin;
         border-color:#cccccc;
+        overflow:auto;
     }
     #break{
         width:600px;
@@ -143,13 +149,16 @@
         text-align: center;
         color:#cccccc;
         border-top:10px solid #4aaaa5;
-        padding:30px;
+        padding:20px;
+        
 
     }
 
     #github, #linkedin, #soundcloud{
         float:left;
         margin-right:10px;
+        height:60px;
+        width:60px;
     }
 
     #github{
@@ -174,7 +183,7 @@
 
     textarea{
         width:600px;
-        height:200px;
+        height:105px;
     }
 
     input[type=submit] {
@@ -192,11 +201,12 @@
     #galaga, #pacman, #templates{
         position:relative;
         float:left;
-        margin-bottom:15px;
+        margin-bottom:25px;
     }
 
-    #webdev, #galaga{
-        margin-right:10px;
+    #webdev, #galaga, #templates{
+        margin-right:40px;
+        margin-left:10px;
     }
 
     hr{
@@ -209,10 +219,72 @@
         left:0;
         bottom:25px;
         background-color: #44bbaa;
-        width:290px;
+        width:260px;
         text-align: center;
         font-size:16pt;
         padding-top:15px;
         padding-bottom:15px;
         color:white; 
     }
+
+@media screen and (max-width:1260px){
+
+.Connect{
+    margin-left:23%;
+}
+#Navlinks{
+    left:35%;
+}
+}
+
+@media screen and (max-width:980px){
+#Name{
+    left:15%;
+}
+.About{
+    margin-left:15%;
+}
+.Port{
+    margin-left:15%;
+}
+.Connect{
+    margin-left:15%;
+}
+#Navlinks{
+    left:30%;
+}
+}
+@media screen and (max-width:768px){
+#Name{
+    left:5%;
+}
+.About{
+    margin-left:5%;
+}
+.Port{
+    margin-left:5%;
+}
+.Connect{
+    margin-left:5%;
+}
+#Navlinks{
+    left:20%;
+}
+}
+@media screen and (max-width:640px){
+#Name{
+    left:0.5%;
+}
+.About{
+    margin-left:0.5%;
+}
+.Port{
+    margin-left:0.5%;
+}
+.Connect{
+    margin-left:0.5%;
+}
+#Navlinks{
+    left:15%;
+}
+}
